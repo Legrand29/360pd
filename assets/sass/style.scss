@@ -1,0 +1,71 @@
+@import "config";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: white !important;
+    color: black !important;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    button {
+        background-color: $main-color !important;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 16px !important;
+            }
+        }
+
+        .mail {
+            background-color: limegreen;
+            border-radius: 50px;
+
+            a {
+                font-size: 15px !important;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+.portfolio {
+
+    .card {
+
+        &-content {
+            transition: all .3s ease-in;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .btn {
+                background-color: limegreen;
+            }
+        }
+    }
+}
+
+.contact-content {
+    padding-bottom: 30px;
+
+    h2 {
+        color: #555;
+
+        a {
+            text-decoration: none;
+            color: limegreen;
+        }
+    }
+}

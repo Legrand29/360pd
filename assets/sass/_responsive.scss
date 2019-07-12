@@ -1,0 +1,51 @@
+@media screen and (min-width : 768px) {
+    // Nav
+    nav {
+        display: flex!important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+        .logo {
+            
+            img {
+                width: 20%!important;
+                display: flex;
+                align-items: center;
+            }
+        }
+        label {
+            display: none;
+        }
+        .nav-links {
+            all: unset!important;
+            display: flex!important;
+            list-style: none!important;
+            position: absolute;
+            top: 0;
+            li {
+                padding: 0 10px;
+                a {
+                    font-size: 20px!important;
+                }
+            }
+        }
+    }
+    
+    // CALL-TO-ACTION
+    .call-to-action {
+        font-size: 36px!important;
+    }
+}
+
+@media screen and (min-width : 1021px) {
+    //Nav
+    nav {
+        height: 15vh!important;
+        .logo {
+            width: 100%;
+            img {
+                width: 12%!important;
+            }
+        }
+    }
+}

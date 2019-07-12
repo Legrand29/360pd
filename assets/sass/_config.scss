@@ -1,0 +1,33 @@
+// COLOR 
+$main-color: rgb(39,200,45);
+$light-color: rgb(230,230,230);
+$dark-color: rgb(77,77,77);
+
+$color-opacity: rgba(39, 200, 45, 0.5);
+
+
+@mixin text-shadow {
+    -webkit-text-shadow: 3px 6px 10px rgba(0,0,0,0.5);
+    -moz-text-shadow: 3px 6px 10px rgba(0,0,0,0.5);
+    -o-text-shadow: 3px 6px 10px rgba(0,0,0,0.5);
+    text-shadow: 3px 6px 10px rgba(0,0,0,0.5);
+}    
+
+@mixin box-shadow {    
+    -webkit-box-shadow: 01px 6px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 01px 6px 10px rgba(0,0,0,0.5);
+    -o-box-shadow: 01px 6px 10px rgba(0,0,0,0.5);
+    box-shadow: 01px 6px 10px rgba(0,0,0,0.5);
+}
+
+.section {
+    padding: 90px 50px 30px 50px;
+}
+main {
+    width: 90%;
+    margin: -50px 50px 0px 50px;
+    background-color: $light-color;
+    @include box-shadow;
+    border-radius: 15px;
+    z-index: 50;
+}
