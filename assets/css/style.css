@@ -48,4 +48,5 @@ html {
     color: #555; }
     .contact-content h2 a {
       text-decoration: none;
-      color: limegreen; }
+      color: limegreen;
+      font-size: 28px; }
